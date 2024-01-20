@@ -7,9 +7,9 @@ def count():
     lowerch=0
     for ch in content:
         if ch.islower():
-            upperch+=1
-        elif ch.isupper():
             lowerch+=1
+        elif ch.isupper():
+            upperch+=1
         ch=ch.lower()
         if ch in 'aeiou':
             v+=1
@@ -18,7 +18,7 @@ def count():
     f.close()
     print("Vowels are : ",v)
     print("consonants are : ",cons)
-    print("Lower case letters are : ",upperch)
-    print("Upper case letters are : ",lowerch)
+    print("Lower case letters are : ",lowerch)
+    print("Upper case letters are : ",upperch)
 
 count()
